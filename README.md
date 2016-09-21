@@ -1,24 +1,22 @@
-# README
+#PARA CLONAR REPOSITORIO
+- Iniciar cloud9 en blanco
+- gem install rails
+- git init
+- git clone https://github.com/SmartSolutionsDW/smatsolutions_v2.git
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+ubicarse en la carpeta : 
+cd "nombre de la carpeta"
+bundle install
+rake db:create
+rake db:migrate
 
-Things you may want to cover:
+#PARA CREACION DE SCAFFOLD
 
-* Ruby version
+rails g scaffold product co_product:integer 
+rake db:migrate
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+#PARA SUBIR CAMBIOS A GITHUB
+-git init
+-git add . ( subir todos los archivos)
+-git commit -m "avance mantenmiento"
+-git push -u origin master
