@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  co_producto: 1
+  co_tipoproducto: 1
+  no_producto: MyString
+  ss_precio: 
+  qt_stock: 1
+
+two:
+  co_producto: 1
+  co_tipoproducto: 1
+  no_producto: MyString
+  ss_precio: 
+  qt_stock: 1

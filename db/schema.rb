@@ -10,7 +10,24 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160920015123) do
+ActiveRecord::Schema.define(version: 20160921070025) do
+
+  create_table "productos", force: :cascade do |t|
+    t.integer  "co_producto"
+    t.integer  "co_tipoproducto"
+    t.string   "no_producto"
+    t.decimal  "ss_precio"
+    t.integer  "qt_stock"
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
+  end
+
+  create_table "tipo_productos", force: :cascade do |t|
+    t.integer  "co_tipoproducto"
+    t.string   "no_cotipoproducto"
+    t.datetime "created_at",        null: false
+    t.datetime "updated_at",        null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false

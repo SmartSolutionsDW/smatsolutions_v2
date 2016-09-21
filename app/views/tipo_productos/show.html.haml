@@ -1,0 +1,12 @@
+%p#notice= notice
+
+%p
+  %b Co tipoproducto:
+  = @tipo_producto.co_tipoproducto
+%p
+  %b No cotipoproducto:
+  = @tipo_producto.no_cotipoproducto
+
+= link_to 'Edit', edit_tipo_producto_path(@tipo_producto)
+\|
+= link_to 'Back', tipo_productos_path

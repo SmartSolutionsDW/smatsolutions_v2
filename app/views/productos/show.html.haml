@@ -1,0 +1,21 @@
+%p#notice= notice
+
+%p
+  %b Co producto:
+  = @producto.co_producto
+%p
+  %b Co tipoproducto:
+  = @producto.co_tipoproducto
+%p
+  %b No producto:
+  = @producto.no_producto
+%p
+  %b Ss precio:
+  = @producto.ss_precio
+%p
+  %b Qt stock:
+  = @producto.qt_stock
+
+= link_to 'Edit', edit_producto_path(@producto)
+\|
+= link_to 'Back', productos_path

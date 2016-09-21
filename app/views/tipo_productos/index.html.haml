@@ -1,0 +1,23 @@
+%h1 Listing tipo_productos
+
+%table
+  %thead
+    %tr
+      %th Co tipoproducto
+      %th No cotipoproducto
+      %th
+      %th
+      %th
+
+  %tbody
+    - @tipo_productos.each do |tipo_producto|
+      %tr
+        %td= tipo_producto.co_tipoproducto
+        %td= tipo_producto.no_cotipoproducto
+        %td= link_to 'Show', tipo_producto
+        %td= link_to 'Edit', edit_tipo_producto_path(tipo_producto)
+        %td= link_to 'Destroy', tipo_producto, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Tipo producto', new_tipo_producto_path
