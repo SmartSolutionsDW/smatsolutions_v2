@@ -1,0 +1,21 @@
+%p#notice= notice
+
+%p
+  %b Co evento:
+  = @evento.co_evento
+%p
+  %b Co local:
+  = @evento.co_local
+%p
+  %b F evento:
+  = @evento.f_evento
+%p
+  %b Capacidad:
+  = @evento.capacidad
+%p
+  %b Descripcion:
+  = @evento.descripcion
+
+= link_to 'Edit', edit_evento_path(@evento)
+\|
+= link_to 'Back', eventos_path

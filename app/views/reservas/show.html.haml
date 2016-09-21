@@ -1,0 +1,21 @@
+%p#notice= notice
+
+%p
+  %b Co reserva:
+  = @reserva.co_reserva
+%p
+  %b Co sala:
+  = @reserva.co_sala
+%p
+  %b Co cliente:
+  = @reserva.co_cliente
+%p
+  %b Fe reserva:
+  = @reserva.fe_reserva
+%p
+  %b Tx descripcion:
+  = @reserva.tx_descripcion
+
+= link_to 'Edit', edit_reserva_path(@reserva)
+\|
+= link_to 'Back', reservas_path

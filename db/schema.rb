@@ -10,7 +10,27 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160921070025) do
+ActiveRecord::Schema.define(version: 20160921161121) do
+
+  create_table "eventos", force: :cascade do |t|
+    t.integer  "co_evento"
+    t.integer  "co_local"
+    t.date     "f_evento"
+    t.integer  "capacidad"
+    t.text     "descripcion"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
+
+  create_table "locals", force: :cascade do |t|
+    t.integer  "co_local"
+    t.integer  "no_local"
+    t.text     "direccion"
+    t.string   "telefono"
+    t.string   "correo"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "productos", force: :cascade do |t|
     t.integer  "co_producto"
@@ -20,6 +40,26 @@ ActiveRecord::Schema.define(version: 20160921070025) do
     t.integer  "qt_stock"
     t.datetime "created_at",      null: false
     t.datetime "updated_at",      null: false
+  end
+
+  create_table "reservas", force: :cascade do |t|
+    t.integer  "co_reserva"
+    t.integer  "co_sala"
+    t.integer  "co_cliente"
+    t.date     "fe_reserva"
+    t.text     "tx_descripcion"
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
+  end
+
+  create_table "salas", force: :cascade do |t|
+    t.integer  "co_sala"
+    t.integer  "co_local"
+    t.integer  "no_sala"
+    t.integer  "capacidad"
+    t.text     "descripcion"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
   end
 
   create_table "tipo_productos", force: :cascade do |t|

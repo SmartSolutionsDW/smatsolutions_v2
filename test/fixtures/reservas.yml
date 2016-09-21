@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  co_reserva: 1
+  co_sala: 1
+  co_cliente: 1
+  fe_reserva: 2016-09-21
+  tx_descripcion: MyText
+
+two:
+  co_reserva: 1
+  co_sala: 1
+  co_cliente: 1
+  fe_reserva: 2016-09-21
+  tx_descripcion: MyText

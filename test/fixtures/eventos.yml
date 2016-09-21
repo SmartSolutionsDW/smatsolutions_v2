@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  co_evento: 1
+  co_local: 1
+  f_evento: 2016-09-21
+  capacidad: 1
+  descripcion: MyText
+
+two:
+  co_evento: 1
+  co_local: 1
+  f_evento: 2016-09-21
+  capacidad: 1
+  descripcion: MyText

@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  resources :reservas
+  resources :eventos
+  resources :salas
+  resources :locals
   resources :productos
   resources :tipo_productos
     devise_for :users

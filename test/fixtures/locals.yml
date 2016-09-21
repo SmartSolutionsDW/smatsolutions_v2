@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  co_local: 1
+  no_local: 1
+  direccion: MyText
+  telefono: MyString
+  correo: MyString
+
+two:
+  co_local: 1
+  no_local: 1
+  direccion: MyText
+  telefono: MyString
+  correo: MyString

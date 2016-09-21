@@ -1,0 +1,21 @@
+%p#notice= notice
+
+%p
+  %b Co local:
+  = @local.co_local
+%p
+  %b No local:
+  = @local.no_local
+%p
+  %b Direccion:
+  = @local.direccion
+%p
+  %b Telefono:
+  = @local.telefono
+%p
+  %b Correo:
+  = @local.correo
+
+= link_to 'Edit', edit_local_path(@local)
+\|
+= link_to 'Back', locals_path

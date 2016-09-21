@@ -1,0 +1,21 @@
+%p#notice= notice
+
+%p
+  %b Co sala:
+  = @sala.co_sala
+%p
+  %b Co local:
+  = @sala.co_local
+%p
+  %b No sala:
+  = @sala.no_sala
+%p
+  %b Capacidad:
+  = @sala.capacidad
+%p
+  %b Descripcion:
+  = @sala.descripcion
+
+= link_to 'Edit', edit_sala_path(@sala)
+\|
+= link_to 'Back', salas_path
